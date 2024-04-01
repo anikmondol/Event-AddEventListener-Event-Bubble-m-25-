@@ -5,7 +5,7 @@
 
 // option: 2 add onclick function on the html element
 function makeRed() {
-    document.body.style.backgroundColor = 'red'
+    document.body.style.backgroundColor = 'red' // important we will use this
 }
 
 
@@ -43,12 +43,13 @@ function makePink() {
 
 const makeGreenButton = document.getElementById('make_green');
 
-makeGreenButton.addEventListener('click', function () {
+makeGreenButton.addEventListener('click', function makeGreen() {
     document.body.style.backgroundColor = 'green'
 })
 
 // option: 4 final
+// document.getElementById('make_goldenrod').addEventListener('click', function(){})
 
 document.getElementById('make_goldenrod').addEventListener('click', function(){
-    document.body.style.backgroundColor = 'goldenRod'
+    document.body.style.backgroundColor = 'goldenRod' // important we will use this someTime
 })
