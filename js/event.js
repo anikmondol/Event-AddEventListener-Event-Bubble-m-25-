@@ -1,12 +1,9 @@
-// console.log('amei added hoice');
-
 
 // option: 1 ---> directly set on the html element
-
 // onclick="document.body.style.backgroundColor = 'yellow'"
 
 
-// option: 2 add onclick function
+// option: 2 add onclick function on the html element
 function makeRed() {
     document.body.style.backgroundColor = 'red'
 }
@@ -32,4 +29,26 @@ makePurpleButton.onclick = function makePurple() {
 
 
 
+// option: 4
+const makePinkButton = document.getElementById('make_pink');
 
+makePinkButton.addEventListener('click', makePink)
+
+function makePink() {
+    document.body.style.backgroundColor = 'pink';
+}
+
+
+// option: 4 another
+
+const makeGreenButton = document.getElementById('make_green');
+
+makeGreenButton.addEventListener('click', function () {
+    document.body.style.backgroundColor = 'green'
+})
+
+// option: 4 final
+
+document.getElementById('make_goldenrod').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'goldenRod'
+})
