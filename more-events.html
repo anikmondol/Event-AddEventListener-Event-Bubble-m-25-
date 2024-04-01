@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More events</title>
+</head>
+
+<body>
+    <h1>Explore More events</h1>
+    <button id="btn_more">Events</button>
+    <input id="text_field" type="text">
+    <script>
+        // document.getElementById('btn_more').addEventListener('click', function(){
+        //     console.log('Event Triggered');
+        // })
+        // -----------------------------------------
+        // document.getElementById('btn_more').addEventListener('mouseenter', function(){
+        //     console.log('Event Triggered');
+        // })
+        // ------------------------------------------
+        document.getElementById('btn_more').addEventListener('mousemove', function () {
+            console.log('Event Triggered');
+        })
+        // -------------------------------------------
+
+        // ---->>> input
+
+
+        // document.getElementById('text_field').addEventListener('focus', function(){
+        //     console.log('Event triggered inside the input field');
+        // })
+        // -------------------------------------------
+        // document.getElementById('text_field').addEventListener('blur', function(){
+        //     console.log('Event triggered inside the input field blur');
+        // })
+        // -------------------------------------------
+
+        // key type
+
+        // document.getElementById('text_field').addEventListener('keydown', function(event){
+        //     console.log(event.target.value);
+        // })
+        // ------------------------------------------
+        // document.getElementById('text_field').addEventListener('keypress', function(event){
+        //     console.log(event.target.value);
+        // })
+        // ------------------------------------------
+        document.getElementById('text_field').addEventListener('keyup', function(event){
+            console.log(event.target.value);
+        })
+
+    </script>
+</body>
+
+</html>
